@@ -6,8 +6,7 @@ This little Extension of Bundle can help you out to get all the ViewControllers 
 ```
 extension Bundle {
     
-     func retrieveAllControllers() -> [String] {
-        
+     func retrieveAllControllers() -> [String] {  
         guard let bundlePath = self.executablePath else {return []}
         var viewControllers = [String]()
         var size:UInt32 = 0
